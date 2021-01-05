@@ -1,0 +1,46 @@
+<nz-layout>
+    <nz-header>
+      <div class="logo"></div>
+      <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+        <li nz-menu-item>Thông tin tài khoản</li>
+        <!-- <li nz-menu-item>nav 2</li>
+        <li nz-menu-item>nav 3</li> -->
+      </ul>
+    </nz-header>
+    <nz-layout>
+      <nz-sider nzWidth="200px" nzTheme="light">
+        <ul nz-menu nzMode="inline" class="sider-menu">
+          <li nz-submenu nzOpen nzIcon="home" nzTitle="Trang chủ">
+            <ul>
+              <li nz-menu-item nzSelected routerLink="trang-chu">Tin tức</li>
+              <!-- <li nz-menu-item>option2</li>
+              <li nz-menu-item>option3</li>
+              <li nz-menu-item>option4</li> -->
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Bảng điểm" nzIcon="table">
+            <ul>
+              <li nz-menu-item routerLink="bang-diem">Bảng điểm</li>
+              <li nz-menu-item>Kết quả cuối năm</li>
+              <!-- <li nz-menu-item>option7</li>
+              <li nz-menu-item>option8</li> -->
+            </ul>
+          </li>
+          <li nz-submenu nzTitle="Cài đặt" nzIcon="setting">
+            <ul>
+              <li nz-menu-item>Đăng xuất</li>
+              <!-- <li nz-menu-item>option10</li>
+              <li nz-menu-item>option11</li>
+              <li nz-menu-item>option12</li> -->
+            </ul>
+          </li>
+        </ul>
+      </nz-sider>
+      <nz-layout class="inner-layout">
+       <br>
+        <nz-content>
+            <router-outlet></router-outlet>
+        </nz-content>
+      </nz-layout>
+    </nz-layout>
+  </nz-layout>

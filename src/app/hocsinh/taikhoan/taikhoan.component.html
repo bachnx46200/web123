@@ -1,0 +1,71 @@
+
+
+<br>
+
+<nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="table-responsive">
+    
+                <nz-descriptions nzBordered *ngIf="hocsinh">
+                    <br />
+                    <nz-descriptions-item nzTitle="Họ và tên">{{hocsinh.hoten}}</nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Giới tính">{{hocsinh.gioitinh}}</nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Dân tộc">{{hocsinh.dantoc}}</nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Mã học sinh">
+                      {{hocsinh.mahocsinh}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Ngày sinh" [nzSpan]="2">
+                      {{hocsinh.ngaysinh}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Nơi sinh" [nzSpan]="3">
+                      {{hocsinh.noisinh}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="CMND">{{hocsinh.cmnd}}</nz-descriptions-item>                
+                    <nz-descriptions-item nzTitle="Tôn giáo" [nzSpan]="2">{{hocsinh.tongiao}}</nz-descriptions-item>
+                  
+                    <nz-descriptions-item nzTitle="Email">
+                      {{hocsinh.email}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Số điện thoại" [nzSpan]="2">
+                      {{hocsinh.dienthoai}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Địa chỉ" [nzSpan]="3">
+                      {{hocsinh.diachi}}
+                    </nz-descriptions-item>
+                    
+                    <nz-descriptions-item nzTitle="Họ tên bố">
+                      {{hocsinh.hotenBo}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Điện thoại bố" [nzSpan]="2">
+                      {{hocsinh.dienthoaiBo}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Đơn vị công tác của bố" [nzSpan]="3">
+                      {{hocsinh.dvCongTacBo}}
+                    </nz-descriptions-item>
+
+
+                    <nz-descriptions-item nzTitle="Họ tên mẹ">
+                      {{hocsinh.hotenMe}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Điện thoại mẹ" [nzSpan]="2">
+                      {{hocsinh.dienthoaiMe}}
+                    </nz-descriptions-item>
+                    <nz-descriptions-item nzTitle="Đơn vị công tác của mẹ" [nzSpan]="3">
+                      {{hocsinh.dvCongTacMe}}
+                    </nz-descriptions-item>
+                  </nz-descriptions>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    </nz-spin>
+
+    <br>

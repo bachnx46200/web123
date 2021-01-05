@@ -1,0 +1,74 @@
+
+
+<br>
+
+<nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
+    <!-- <div class="content-wrapper">
+      <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <div class="table-responsive"> -->
+    
+                <div class="site-page-header-ghost-wrapper">
+                  <nz-page-header nzBackIcon [nzGhost]="false">
+                    <nz-page-header-title>Bảng Điểm</nz-page-header-title>
+                    <nz-page-header-title>
+                      <nz-select [(ngModel)]="selectedValuehocky">
+                        <nz-option nzValue="true" nzLabel="Học kỳ 1"></nz-option>
+                        <nz-option nzValue="false" nzLabel="Học kỳ 2"></nz-option>
+                      </nz-select>
+                    </nz-page-header-title>
+       
+                    <nz-page-header-subtitle>
+                      <button nz-button (click)="timkiem()">Tìm kiếm</button>
+                    </nz-page-header-subtitle>
+                    <nz-page-header-extra>
+                      <button nz-button>PDF</button>
+                      <button nz-button>Excel</button>
+                    </nz-page-header-extra>
+                    <nz-page-header-content>
+    
+                      <nz-table #colSpanTable [nzData]="bangdiem" nzBordered>
+                        <thead>
+                          <tr>
+                            <th>Môn học</th>
+                            <th colspan="3">Điểm miệng</th>
+                            <th colspan="3">Điểm 15 phút</th>
+                            <th colspan="2">Điểm 45 phút</th>
+                            <th>Điểm học kỳ</th>
+                            <th>Điểm trung bình môn</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let data of bangdiem">
+                          <tr>
+                            <td>{{data.mon}}</td>
+                            <td>{{data.diemmieng1}}</td>
+                            <td>{{data.diemmieng2}}</td>
+                            <td>{{data.diemmieng3}}</td>
+                            <td>{{data.diem15phut1}}</td>
+                            <td>{{data.diem15phut2}}</td>
+                            <td>{{data.diem15phut3}}</td>
+                            <td>{{data.diem1tiet1}}</td>
+                            <td>{{data.diem1tiet2}}</td>
+                            <td>{{data.diemthi}}</td>
+                            <td style="color: red;">{{data.diemTBM}}</td>
+                          </tr>
+                        </tbody>
+                      </nz-table>
+    
+                    </nz-page-header-content>
+                  </nz-page-header>
+                </div>
+    
+    
+              <!-- </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div> -->
+    </nz-spin>
+
+    <br>
